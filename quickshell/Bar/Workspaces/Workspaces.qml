@@ -8,12 +8,12 @@ import "../../Themes"
 Rectangle { 
    implicitHeight: juan.implicitHeight
    implicitWidth: juan.implicitWidth
-   color: Theme.grey
+   color: Theme.white
    radius: 20
 
    Row {
       id: juan
-      spacing: 10
+      spacing: 0
       anchors.centerIn: parent
       leftPadding: 10
       rightPadding: 10
@@ -23,9 +23,9 @@ Rectangle {
 
 	 Rectangle { 
 	    implicitHeight: workspace.implicitHeight
-	    implicitWidth: isActive ? workspace.implicitWidth + 20: workspace.implicitWidth
+	    implicitWidth: isActive ? 30 : 20
 
-	    color: isActive ? Theme.blueDark : "transparent"
+	    color: isActive ? Theme.blue : "transparent"
 	    radius: 20
 
 	    property var ws: Hyprland.workspaces.values.find(w => w.id === index + 1)

@@ -4,8 +4,8 @@ import QtQuick
 QtObject {
    readonly property color bg: "#1f1f28"
    readonly property color white: "#f2ecbc"
-   readonly property color blue: "#4d699b"
-   readonly property color blueDark: "#7e9cd8"
+   readonly property color blue: "#7e9cd8"
+   readonly property color blueDark: "#4d699b"
    readonly property color red: "#c84053"
    readonly property color redBlack: "#e46876"
    readonly property color pink: "#b35b79"
@@ -19,7 +19,7 @@ QtObject {
    readonly property color orange: "#cc6d00"
    readonly property color orangeDark: "#ffa066"
    readonly property color grey: "#c8c093"
-   readonly property color greyDark: "#727169"
+   readonly property color greyDark: "#716e61"
    readonly property string fontFamily: "Hurmit Nerd Font"
    readonly property int fontSize: 17
 }

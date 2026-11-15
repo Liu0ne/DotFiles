@@ -15,6 +15,6 @@ PanelWindow {
    Image {
       anchors.fill: parent
       fillMode: Image.PreserveAspectCrop
-      source: "/home/Liu/Downloads/2.jpg"
+      source: "Wallpapers/5.png"
    }
 }

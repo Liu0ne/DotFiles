@@ -1,7 +1,8 @@
 local terminal = "wezterm"
 
 hl.on("hyprland.start", function()
-   hl.exec_cmd("ewwii daemon && ewwii open example")
+   hl.exec_cmd("quickshell")
+   hl.exec_cmd("brightnessctl set 0% && for i in {1..20}; do sleep 0.05 && brightnessctl set 1%+; done && for i in {1..20}; do brightnessctl set 1%+; done")
 end)
  
 hl.monitor({
@@ -34,7 +35,7 @@ hl.config({
 
 	  blur = {
 		enabled = true,
-		size = 10,
+		size = 4,
 		passes = 2,
 		vibrancy = 0.1696,
 	  },
@@ -88,7 +89,7 @@ hl.bind(mod .. " + SHIFT + l", hl.dsp.window.move({direction = "right", group_aw
 
 
 hl.window_rule({
-	  name = "unfocused no-border",
-	  match = { focus = false },
-	  border_size = 0
+   name = "unfocused no-border",
+   match = { focus = false },
+   border_size = 0
 })

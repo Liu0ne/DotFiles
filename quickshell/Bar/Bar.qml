@@ -6,6 +6,7 @@ import QtQuick.Layouts
 import "../Themes"
 import "Workspaces"
 import "Distro"
+import "Time"
 
 PanelWindow {
    anchors.top: true
@@ -27,14 +28,15 @@ PanelWindow {
       implicitHeight: modules.implicitHeight + 10
       anchors.centerIn: parent
       radius: 20
-      color: Theme.bg
+      color: Qt.alpha(Theme.bg, 1)
 
       RowLayout {
 	 id: modules
 	 anchors.centerIn: parent
-	 spacing: 8
+	 spacing: 9
 
 	 Distro {}
+	 Time {}
 	 Workspaces {}
       }
    }
