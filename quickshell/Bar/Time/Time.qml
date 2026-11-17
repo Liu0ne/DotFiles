@@ -7,10 +7,11 @@ import "../../Themes"
 Rectangle {
    implicitHeight: text.implicitHeight
    implicitWidth: text.implicitWidth + 14
-   color: "transparent"
    radius: 7
+   color: "transparent"
 
-   border { color: Theme.grey; width: 2}
+   border.color: Theme.grey 
+   border.width: 2
 
    SystemClock {
       id: clock
@@ -20,8 +21,9 @@ Rectangle {
    Text {
       id: text
       anchors.centerIn: parent
+      font.family: Theme.fontFamily
+      font.pixelSize: Theme.fontSize
       color: Theme.white
-      font { family: Theme.fontFamily; pixelSize: Theme.fontSize ; }
       text: Qt.formatDateTime(clock.date, "hh:mm")
    }
 }

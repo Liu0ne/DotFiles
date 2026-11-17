@@ -1,0 +1,13 @@
+[general]
+import = [ "~/DotFiles/alacritty/themes/kanagawa_wave.toml" ]
+
+[font]
+normal = { family = "Hurmit Nerd Font", style = "normal" }
+size = 12
+
+[window]
+padding = { x = 10, y = 10 }
+opacity = 1
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }

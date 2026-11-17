@@ -2,13 +2,13 @@ local wezterm = require 'wezterm'
 
 local config = {
     font = wezterm.font('HurmitNerdFont', {style = "Normal" , stretch = "Condensed", weight = "Regular"}),
-    font_size = 12,
+    font_size = 11.5,
     line_height = 1,
     default_cursor_style = "BlinkingUnderline",
     show_new_tab_button_in_tab_bar = false,
     hide_tab_bar_if_only_one_tab = true,
     color_scheme = "Kanagawa (Gogh)",
-    window_background_opacity = 0.96,
+    window_background_opacity = 1,
     use_fancy_tab_bar = false,
     tab_bar_at_bottom = true,
     show_tabs_in_tab_bar = true,

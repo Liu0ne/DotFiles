@@ -1,4 +1,3 @@
-import Quickshell
 import Quickshell.Hyprland
 import QtQuick
 import QtQuick.Layouts
@@ -8,12 +7,11 @@ import "../../Themes"
 Rectangle { 
    implicitHeight: juan.implicitHeight
    implicitWidth: juan.implicitWidth
-   color: Theme.white
    radius: 20
+   color: Theme.white
 
    Row {
       id: juan
-      spacing: 0
       anchors.centerIn: parent
       leftPadding: 10
       rightPadding: 10
@@ -24,8 +22,7 @@ Rectangle {
 	 Rectangle { 
 	    implicitHeight: workspace.implicitHeight
 	    implicitWidth: isActive ? 30 : 20
-
-	    color: isActive ? Theme.blue : "transparent"
+	    color: isActive ? Theme.blueDark : "transparent"
 	    radius: 20
 
 	    property var ws: Hyprland.workspaces.values.find(w => w.id === index + 1)
@@ -34,8 +31,9 @@ Rectangle {
 	    Text {
 	       id: workspace
 	       anchors.centerIn: parent
+	       font.pixelSize: Theme.fontSize 
+	       font.family: Theme.fontFamily
 	       color: isActive ? Theme.white : Theme.greyDark
-	       font { pixelSize: Theme.fontSize; family: Theme.fontFamily }
 	       text: index + 1
 	    }
 	    MouseArea {
@@ -46,3 +44,5 @@ Rectangle {
       }
    }
 }
+
+// HDSPTM ME MUERO DIOSSSSS

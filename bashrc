@@ -14,13 +14,15 @@ black_bg='\[\e[40m\]'
 black_fg='\[\e[0;30m\]'
 grey_bg='\[\e[100m\]'
 grey_fg='\[\e[0;90m\]'
-white_bg='\[\e[107m\]'
-white_fg='\[\e[0;97m\]'
+white_bg='\[\e[47m\]'
+white_fg='\[\e[0;37m\]'
 
 reset='\[\e[0m\]'
 
 if [ $TERM = "xterm-256color" ]; then 
-   PS1="${blue_fg}${reset}${black_fg}${blue_bg} ${reset}${blue_fg}${white_bg}${reset}${black_fg}${white_bg} \w ${reset}${white_fg}${reset} ";
+   PS1="${white_fg}${reset}${black_fg}${white_bg} \w ${reset}${white_fg}${reset} ";
+elif [ $TERM = "alacritty" ]; then
+   PS1="${white_fg}${reset}${black_fg}${white_bg} \w ${reset}${white_fg}${reset} ";
 else
    PS1='\u | \w >';
 fi

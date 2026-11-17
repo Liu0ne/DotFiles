@@ -5,20 +5,21 @@ import QtQuick.Layouts
 import "../../Themes"
 
 Item {
-   implicitWidth: block.implicitWidth
    implicitHeight: block.implicitHeight
+   implicitWidth: block.implicitWidth
    Rectangle {
       id: block
-      implicitWidth: text.implicitWidth + 15
       implicitHeight: text.implicitHeight 
+      implicitWidth: text.implicitWidth + 15
       color: Theme.blueDark
       radius: 20
 
       Text {
 	 id: text
 	 anchors.centerIn: parent
+	 font.pixelSize: Theme.fontSize 
+	 font.family: Theme.font 
 	 color: Theme.white
-	 font { pixelSize: Theme.fontSize; family: Theme.font }
 	 text: ""
       }
    }

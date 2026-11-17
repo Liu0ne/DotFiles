@@ -7,3 +7,4 @@ return {
       { "<leader>e", "<cmd>Oil <CR>" }
    }
 }
+-- en serio, que plugin para ser tan simple y tan eficiente 
